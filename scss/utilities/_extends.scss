@@ -1,0 +1,28 @@
+//Buttons
+%btn {
+    color: $white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+//Forms
+%input--spacing {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+}
+
+//Blockquote
+%blockquote--style {
+    border-left: 6px solid $color-accent;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 1.333em;
+    font-style: italic;
+    text-align: left;
+}

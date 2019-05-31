@@ -1,0 +1,14 @@
+.img--frame {
+    @extend %image--border;
+    padding: 10px;
+}
+
+.img--avatar {
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+
+.img--logo {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}

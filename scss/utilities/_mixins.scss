@@ -1,0 +1,25 @@
+//Buttons
+@mixin btn--spacing {
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 50px;
+}
+
+//Media Queries
+@mixin mq($break) {
+              
+       @if $break == 'med' {
+          @media (min-width: $breakpoint-med) {
+              @content; 
+          }
+       }
+}
+
+//Flex
+@mixin flex($display: flex, $direction: column, $wrap: null, $justify: null) {
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+}

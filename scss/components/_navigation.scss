@@ -1,0 +1,22 @@
+.nav__item {
+  @extend %nav-item;
+  &:hover {
+    background: $color-primary;
+  }
+  a {
+    @extend %nav-item--link;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+@include mq('med') {
+  .nav {
+    display: block;
+  }
+
+  .nav__item {
+    display: inline-block;
+  }
+}

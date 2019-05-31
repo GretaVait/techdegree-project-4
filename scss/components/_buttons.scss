@@ -1,0 +1,33 @@
+
+.grid__col--12 > .btn--default {
+    background-color: $default-btn-color;
+}
+
+.grid__col--12 > .btn--success {
+    background-color: $success-btn-color;
+}
+
+.grid__col--12 > .btn--error {
+    background-color: $error-btn-color;
+}
+
+.grid__col--12 > .btn--warning {
+    background-color: $warning-btn-color;
+}
+
+.grid__col--12 > .btn--info {
+    background-color: $info-btn-color;
+}
+
+[class^="btn--"] {
+    @extend %btn;
+    transition: filter .3s;
+    &:hover {
+        filter: brightness(85%);
+    }
+}
+@include mq('med') {
+    [class^="btn--"] {
+        @include btn--spacing;
+    }
+}

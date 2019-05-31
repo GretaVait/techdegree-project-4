@@ -1,0 +1,15 @@
+.form__input {
+    border: none;
+    outline: none;
+    border-bottom: 4px solid $color-primary;
+    @extend %input--spacing;
+}
+
+.form__label--hidden {
+    display: none;
+}
+
+.form button {
+    background-color: $color-accent;
+    @extend %btn;
+}
